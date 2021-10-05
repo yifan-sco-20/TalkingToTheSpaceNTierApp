@@ -6,27 +6,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WEB_API.Models.User;
+using WEB_API.Models.Reply;
 
 namespace WEB_API.Controllers
 {
     [EnableCors("angular")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class ReplyController : ControllerBase
     {
-        private IUser_Service _User_Service;
+        private IReply_Service _Reply_Service;
 
-        public UserController(IUser_Service User_Service)
+        public ReplyController(IReply_Service Reply_Service)
         {
-            _User_Service = User_Service;
+            _Reply_Service = Reply_Service;
         }
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> AddUser(string username, string user_password, string user_profile_name, string user_email, Int64 user_point)
+        public async Task<IActionResult> AddReply(string reply_content, string reply_status, DateTime reply_sent_date, Int64 user_id, Int64 message_id)
         {
-            var result = await _User_Service.AddUser(username, user_password, user_profile_name, user_email, user_point);
+            var result = await _Reply_Service.AddReply(reply_content, reply_status, reply_sent_date, user_id, message_id);
             switch (result.success)
             {
                 case true:
@@ -39,9 +39,9 @@ namespace WEB_API.Controllers
 
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IActionResult> GetAllReplys()
         {
-            var result = await _User_Service.GetAllUsers();
+            var result = await _Reply_Service.GetAllReplys();
             switch (result.success)
             {
                 case true:
@@ -54,9 +54,9 @@ namespace WEB_API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> UpdateUser(User_Pass_Object user)
+        public async Task<IActionResult> UpdateReply(Reply_Pass_Object reply)
         {
-            var result = await _User_Service.UpdateUser(user.user_id, user.username, user.user_password, user.user_profile_name, user.user_email, user.user_point);
+            var result = await _Reply_Service.UpdateReply(reply.reply_id, reply.reply_content, reply.reply_status, reply.reply_modified_date, reply.reply_sent_date);
             switch (result.success)
             {
                 case true:
@@ -69,9 +69,9 @@ namespace WEB_API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> DeleteUser(User_Pass_Object user)
+        public async Task<IActionResult> DeleteReply(Reply_Pass_Object reply)
         {
-            var result = await _User_Service.DeleteUser(user.user_id);
+            var result = await _Reply_Service.DeleteReply(reply.reply_id);
             switch (result.success)
             {
                 case true:

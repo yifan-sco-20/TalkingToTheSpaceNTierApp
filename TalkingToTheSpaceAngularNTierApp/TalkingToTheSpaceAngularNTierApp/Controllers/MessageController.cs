@@ -6,27 +6,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WEB_API.Models.User;
+using WEB_API.Models.Message;
 
 namespace WEB_API.Controllers
 {
     [EnableCors("angular")]
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class MessageController : ControllerBase
     {
-        private IUser_Service _User_Service;
+        private IMessage_Service _Message_Service;
 
-        public UserController(IUser_Service User_Service)
+        public MessageController(IMessage_Service Message_Service)
         {
-            _User_Service = User_Service;
+            _Message_Service = Message_Service;
         }
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> AddUser(string username, string user_password, string user_profile_name, string user_email, Int64 user_point)
+        public async Task<IActionResult> AddMessage(string message_content, string message_status, DateTime message_sent_date, Int64 user_id)
         {
-            var result = await _User_Service.AddUser(username, user_password, user_profile_name, user_email, user_point);
+            var result = await _Message_Service.AddMessage(message_content, message_status, message_sent_date, user_id);
             switch (result.success)
             {
                 case true:
@@ -39,9 +39,9 @@ namespace WEB_API.Controllers
 
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> GetAllUsers()
+        public async Task<IActionResult> GetAllMessages()
         {
-            var result = await _User_Service.GetAllUsers();
+            var result = await _Message_Service.GetAllMessages();
             switch (result.success)
             {
                 case true:
@@ -54,9 +54,9 @@ namespace WEB_API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> UpdateUser(User_Pass_Object user)
+        public async Task<IActionResult> UpdateMessage(Message_Pass_Object message)
         {
-            var result = await _User_Service.UpdateUser(user.user_id, user.username, user.user_password, user.user_profile_name, user.user_email, user.user_point);
+            var result = await _Message_Service.UpdateMessage(message.message_id, message.message_content, message.message_status, message.message_modified_date, message.message_sent_date);
             switch (result.success)
             {
                 case true:
@@ -69,9 +69,9 @@ namespace WEB_API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> DeleteUser(User_Pass_Object user)
+        public async Task<IActionResult> DeleteMessage(Message_Pass_Object message)
         {
-            var result = await _User_Service.DeleteUser(user.user_id);
+            var result = await _Message_Service.DeleteMessage(message.message_id);
             switch (result.success)
             {
                 case true:

@@ -34,7 +34,9 @@ namespace LOGIC.Services.Implementation
                         reply_creation_date = r.Reply_Creation_Date,
                         reply_modified_date = r.Reply_Modified_Date,
                         reply_sent_date = r.Reply_Sent_Date,
-                        user_id = r.User_ID
+                        user_id = r.User_ID,
+                        message_id = r.Message_ID
+
                     });
                 });
 
@@ -72,7 +74,8 @@ namespace LOGIC.Services.Implementation
                     reply_creation_date = Reply.Reply_Creation_Date,
                     reply_modified_date = Reply.Reply_Modified_Date,
                     reply_sent_date = Reply.Reply_Sent_Date,
-                    user_id = Reply.User_ID
+                    user_id = Reply.User_ID,
+                    message_id =Reply.Message_ID
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -92,7 +95,7 @@ namespace LOGIC.Services.Implementation
         }
 
 
-        public async Task<Generic_ResultSet<Reply_ResultSet>> AddReply(string reply_content, string reply_status, DateTime reply_sent_date, Int64 user_id)
+        public async Task<Generic_ResultSet<Reply_ResultSet>> AddReply(string reply_content, string reply_status, DateTime reply_sent_date, Int64 user_id,Int64 message_id)
         {
             Generic_ResultSet<Reply_ResultSet> result = new Generic_ResultSet<Reply_ResultSet>();
             try
@@ -105,7 +108,9 @@ namespace LOGIC.Services.Implementation
                     Reply_Creation_Date = DateTime.UtcNow,
                     Reply_Modified_Date = DateTime.UtcNow,
                     Reply_Sent_Date = reply_sent_date,
-                    User_ID = user_id
+                    User_ID = user_id,
+                    Message_ID = message_id
+                    
                 };
 
                 //ADD Reply TO DB
@@ -120,7 +125,8 @@ namespace LOGIC.Services.Implementation
                     reply_creation_date = Reply.Reply_Creation_Date,
                     reply_modified_date = Reply.Reply_Modified_Date,
                     reply_sent_date = Reply.Reply_Sent_Date,
-                    user_id = Reply.User_ID
+                    user_id = Reply.User_ID,
+                    message_id = Reply.Message_ID
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
@@ -168,7 +174,8 @@ namespace LOGIC.Services.Implementation
                     reply_creation_date = Reply.Reply_Creation_Date,
                     reply_modified_date = Reply.Reply_Modified_Date,
                     reply_sent_date = Reply.Reply_Sent_Date,
-                    user_id = Reply.User_ID
+                    user_id = Reply.User_ID,
+                    message_id = Reply.Message_ID
                 };
 
                 //SET SUCCESSFUL RESULT VALUES
