@@ -1,3 +1,5 @@
+using LOGIC.Services.Implementation;
+using LOGIC.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +33,12 @@ namespace TalkingToTheSpaceAngularNTierApp
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TalkingToTheSpaceAngularNTierApp", Version = "v1" });
             });
+            
+            #region CUSTOM SERVICES [D-I]
+            services.AddScoped<IUser_Service, User_Service>();
+            services.AddScoped<IMessage_Service, Message_Service>();
+            services.AddScoped<IReply_Service, Reply_Service>();
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -45,6 +45,7 @@ namespace DAL.Functions.Specific
             }
         }
 
+
         public async Task<List<Message>> ReadAll()
         {
             try

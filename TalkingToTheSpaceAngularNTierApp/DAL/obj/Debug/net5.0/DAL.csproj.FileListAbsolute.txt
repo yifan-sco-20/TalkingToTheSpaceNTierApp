@@ -19,7 +19,6 @@ E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Deb
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.dll
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\ref\DAL.dll
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.pdb
-E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs

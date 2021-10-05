@@ -2295,6 +2295,19 @@
         "runtime": {
           "bin/placeholder/DAL.dll": {}
         }
+      },
+      "LOGIC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LOGIC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LOGIC.dll": {}
+        }
       }
     }
   },
@@ -7716,11 +7729,17 @@
       "type": "project",
       "path": "../DAL/DAL.csproj",
       "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "LOGIC/1.0.0": {
+      "type": "project",
+      "path": "../LOGIC/LOGIC.csproj",
+      "msbuildProject": "../LOGIC/LOGIC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "DAL >= 1.0.0",
+      "LOGIC >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -7754,6 +7773,9 @@
           "projectReferences": {
             "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\DAL.csproj": {
               "projectPath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\DAL.csproj"
+            },
+            "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj": {
+              "projectPath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj"
             }
           }
         }
