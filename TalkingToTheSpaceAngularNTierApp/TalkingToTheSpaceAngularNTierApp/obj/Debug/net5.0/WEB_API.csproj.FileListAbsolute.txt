@@ -128,3 +128,5 @@ E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTh
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\obj\Debug\net5.0\ref\WEB_API.dll
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\obj\Debug\net5.0\WEB_API.pdb
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\obj\Debug\net5.0\WEB_API.genruntimeconfig.cache
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\LOGIC.dll
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\LOGIC.pdb
