@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj": {}
+    "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj": {}
   },
   "projects": {
-    "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj": {
+    "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj",
+        "projectUniqueName": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj",
         "projectName": "LOGIC",
-        "projectPath": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj",
+        "projectPath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\LOGIC.csproj",
         "packagesPath": "C:\\Users\\yifan\\.nuget\\packages\\",
-        "outputPath": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\obj\\",
+        "outputPath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\LOGIC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yifan\\AppData\\Roaming\\NuGet\\NuGet.Config",
