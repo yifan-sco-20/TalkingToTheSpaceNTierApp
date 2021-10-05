@@ -48,7 +48,6 @@ namespace DAL.DataContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //SET CUSTOM DEFAULT VALUE ON CREATION
-            //MODIFIED DATE: 
             DateTime modifiedDate = new DateTime(1900, 1, 1);
             DateTime sentDate = new DateTime(2000, 1, 1);
 
@@ -131,116 +130,7 @@ namespace DAL.DataContext
                  .WithMany(ap => ap.Replies)//Grade is linked to many applications
                  .HasForeignKey(app => app.Message_ID)
                  .OnDelete(DeleteBehavior.NoAction);//Can delete an application.
-            #endregion
-
-
-            
+            #endregion 
         }
-
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    //SET CUSTOM DEFAULT VALUE ON CREATION
-        //    //MODIFIED DATE: 
-        //    DateTime modifiedDate = new DateTime(1900, 1, 1);
-
-        //    #region Applicant
-        //    modelBuilder.Entity<Applicant>().ToTable("applicant");
-        //    //Primary Key & Identity Column
-        //    modelBuilder.Entity<Applicant>().HasKey(ap => ap.Applicant_ID);
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Applicant_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("applicant_id");
-        //    //COLUMN SETTINGS
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Applicant_Name).IsRequired(true).HasMaxLength(100).HasColumnName("applicant_name");
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Applicant_Surname).IsRequired(true).HasMaxLength(100).HasColumnName("applicant_surname");
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Applicant_BirthDate).IsRequired(true).HasColumnName("applicant_birthdate");
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Contact_Email).IsRequired(false).HasMaxLength(250).HasColumnName("contact_email");//(no Applicant_)Will be guardians/parents Email
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Contact_Number).IsRequired(true).HasMaxLength(25).HasColumnName("contact_number");//(no Applicant_)Might not be the applicants email, could be guardians/parents
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Applicant_CreationDate).IsRequired(true).HasDefaultValue(DateTime.UtcNow).HasColumnName("applicant_creationdate");
-        //    modelBuilder.Entity<Applicant>().Property(ap => ap.Applicant_ModifiedDate).IsRequired(true).HasDefaultValue(modifiedDate).HasColumnName("applicant_modifieddate");
-        //    //RelationShips
-        //    modelBuilder.Entity<Applicant>()
-        //           .HasMany<Application>(app => app.Applications)
-        //           .WithOne(ap => ap.Applicant)
-        //           .HasForeignKey(app => app.Applicant_ID)
-        //           .OnDelete(DeleteBehavior.Restrict);//Can't delete an applicants info Ever, We can update it though.
-        //    #endregion
-
-        //    #region Application Status
-        //    modelBuilder.Entity<ApplicationStatus>().ToTable("application_status");
-        //    //Primary Key & Identity Column
-        //    modelBuilder.Entity<ApplicationStatus>().HasKey(apps => apps.ApplicationStatus_ID);
-        //    modelBuilder.Entity<ApplicationStatus>().Property(apps => apps.ApplicationStatus_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("application_status_id");
-        //    //COLUMN SETTINGS
-        //    modelBuilder.Entity<ApplicationStatus>().HasIndex(apps => apps.ApplicationStatus_Name).IsUnique(); // Application Status Name is Unique
-        //    modelBuilder.Entity<ApplicationStatus>().Property(apps => apps.ApplicationStatus_Name).IsRequired(true).HasMaxLength(100).HasColumnName("application_status_name");
-        //    modelBuilder.Entity<ApplicationStatus>().Property(apps => apps.ApplicationStatus_CreationDate).IsRequired(true).HasDefaultValue(DateTime.UtcNow).HasColumnName("application_status_creationdate");
-        //    modelBuilder.Entity<ApplicationStatus>().Property(ap => ap.ApplicationtStatus_ModifiedDate).IsRequired(true).HasDefaultValue(modifiedDate).HasColumnName("application_status_modifieddate");
-
-        //    //RelationShips
-        //    modelBuilder.Entity<ApplicationStatus>()
-        //           .HasMany<Application>(app => app.Applications)
-        //           .WithOne(apps => apps.ApplicationStatus)
-        //           .HasForeignKey(app => app.ApplicationStatus_ID)
-        //           .OnDelete(DeleteBehavior.Restrict);//Can't delete an ApplicationStatus, We can update it though.
-        //    #endregion
-
-        //    #region Grade
-        //    modelBuilder.Entity<Grade>().ToTable("grade");
-        //    //Primary Key & Identity Column
-        //    modelBuilder.Entity<Grade>().HasKey(g => g.Grade_ID);
-        //    modelBuilder.Entity<Grade>().Property(g => g.Grade_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("grade_id");
-        //    //COLUMN SETTINGS
-        //    modelBuilder.Entity<Grade>().Property(g => g.Grade_Name).IsRequired(true).HasMaxLength(100).HasColumnName("grade_name");
-        //    modelBuilder.Entity<Grade>().Property(g => g.Grade_Number).IsRequired(true).HasColumnName("grade_number");
-        //    modelBuilder.Entity<Grade>().HasIndex(g => g.Grade_Name).IsUnique(); // Grade Name is Unique
-        //    modelBuilder.Entity<Grade>().HasIndex(g => g.Grade_Number).IsUnique(); // Grade Number is Unique
-        //    modelBuilder.Entity<Grade>().Property(g => g.Grade_Capacity).IsRequired(true).HasColumnName("grade_capacity");
-        //    modelBuilder.Entity<Grade>().Property(g => g.Grade_CreationDate).IsRequired(true).HasDefaultValue(DateTime.UtcNow).HasColumnName("grade_creationdate");
-        //    modelBuilder.Entity<Grade>().Property(g => g.Grade_ModifiedDate).IsRequired(true).HasDefaultValue(modifiedDate).HasColumnName("grade_modifieddate");
-
-        //    //RelationShips
-        //    modelBuilder.Entity<Grade>()
-        //           .HasMany<Application>(g => g.Applications)
-        //           .WithOne(app => app.Grade)
-        //           .HasForeignKey(app => app.Grade_ID)
-        //           .OnDelete(DeleteBehavior.Restrict);//Can't delete a Grade Ever, We can update it though.
-        //    #endregion
-
-        //    #region Application
-        //    modelBuilder.Entity<Application>().ToTable("application");
-        //    //Primary Key & Identity Column
-        //    modelBuilder.Entity<Application>().HasKey(app => app.Application_ID);
-        //    modelBuilder.Entity<Application>().Property(app => app.Application_ID).UseIdentityColumn(1, 1).IsRequired().HasColumnName("application_id");
-        //    //COLUMN SETTINGS
-        //    modelBuilder.Entity<Application>().Property(app => app.Applicant_ID).IsRequired(true).HasColumnName("applicant_id");
-        //    modelBuilder.Entity<Application>().Property(app => app.Grade_ID).IsRequired(true).HasColumnName("grade_id");
-        //    modelBuilder.Entity<Application>().Property(app => app.ApplicationStatus_ID).IsRequired(true).HasColumnName("application_status_id");
-        //    modelBuilder.Entity<Application>().Property(app => app.Application_CreationDate).IsRequired(true).HasDefaultValue(DateTime.UtcNow).HasColumnName("application_creationdate");
-        //    modelBuilder.Entity<Application>().Property(app => app.Application_ModifiedDate).IsRequired(true).HasDefaultValue(modifiedDate).HasColumnName("application_modifieddate");
-        //    modelBuilder.Entity<Application>().Property(app => app.SchoolYear).IsRequired(true).HasColumnName("application_schoolyear");
-        //    //Relationships
-
-        //    //Applicant link
-        //    modelBuilder.Entity<Application>()
-        //         .HasOne<Applicant>(app => app.Applicant)
-        //         .WithMany(ap => ap.Applications)//CAN HAVE MANY APPLICATIONS
-        //         .HasForeignKey(app => app.Applicant_ID)
-        //         .OnDelete(DeleteBehavior.NoAction);//Can delete an application.
-
-        //    //Grade link
-        //    modelBuilder.Entity<Application>()
-        //         .HasOne<Grade>(app => app.Grade)
-        //         .WithMany(ap => ap.Applications)//Grade is linked to many applications
-        //         .HasForeignKey(app => app.Grade_ID)
-        //         .OnDelete(DeleteBehavior.NoAction);//Can delete an application.
-
-        //    //Status link
-        //    modelBuilder.Entity<Application>()
-        //        .HasOne<ApplicationStatus>(app => app.ApplicationStatus)
-        //        .WithMany(ap => ap.Applications)//Status is linked to many applications
-        //        .HasForeignKey(app => app.ApplicationStatus_ID)
-        //        .OnDelete(DeleteBehavior.NoAction);//Can delete an application.
-        //    #endregion
-        //}
     }
 }

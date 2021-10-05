@@ -7568,11 +7568,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\DAL.csproj",
+      "projectUniqueName": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\DAL.csproj",
+      "projectPath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\yifan\\.nuget\\packages\\",
-      "outputPath": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\obj\\",
+      "outputPath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yifan\\AppData\\Roaming\\NuGet\\NuGet.Config",

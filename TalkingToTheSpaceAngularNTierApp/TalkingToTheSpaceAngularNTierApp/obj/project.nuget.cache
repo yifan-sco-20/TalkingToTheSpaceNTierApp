@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6+/3A4J2UGpocpfKq97foo0nODTfTwWP9TKoGkMdGHM7e3iLvk6mtwD7fc/CpmphBNMv7wWkV6M50yeslQCY3Q==",
+  "dgSpecHash": "GukMqEWNH67uI6az18Ni9Ls37f+zyuedgIUq2K6i6flqBXpTGNy+L/ciTHIYRd07iV/UwJ6+DZQ7WhJkhxWLKw==",
   "success": true,
-  "projectFilePath": "E:\\Github\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\WEB_API.csproj",
+  "projectFilePath": "E:\\Github\\TalkingToTheSpaceNTierApp\\TalkingToTheSpaceAngularNTierApp\\TalkingToTheSpaceAngularNTierApp\\WEB_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yifan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\yifan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
