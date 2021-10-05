@@ -1,0 +1,15 @@
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.csproj.AssemblyReference.cache
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.deps.json
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.runtimeconfig.json
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.runtimeconfig.dev.json
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\ref\DAL.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\bin\Debug\net5.0\DAL.pdb
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\ref\DAL.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.pdb
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\DAL\obj\Debug\net5.0\DAL.genruntimeconfig.cache

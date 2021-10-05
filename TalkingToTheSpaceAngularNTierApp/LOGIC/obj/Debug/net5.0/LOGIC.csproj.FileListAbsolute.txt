@@ -1,0 +1,12 @@
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\bin\Debug\net5.0\LOGIC.deps.json
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\bin\Debug\net5.0\LOGIC.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\bin\Debug\net5.0\ref\LOGIC.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\bin\Debug\net5.0\LOGIC.pdb
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.csproj.AssemblyReference.cache
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.AssemblyInfoInputs.cache
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.AssemblyInfo.cs
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.csproj.CoreCompileInputs.cache
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\ref\LOGIC.dll
+E:\Github\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\LOGIC\obj\Debug\net5.0\LOGIC.pdb
