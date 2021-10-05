@@ -61,7 +61,7 @@ namespace DAL.DataContext
             modelBuilder.Entity<User>().Property(ap => ap.User_Password).IsRequired(true).HasMaxLength(100).HasColumnName("user_password");
             modelBuilder.Entity<User>().Property(ap => ap.User_Profile_Name).IsRequired(true).IsUnicode().HasMaxLength(100).HasColumnName("user_profile_name");
             modelBuilder.Entity<User>().Property(ap => ap.User_Email).IsRequired(true).IsUnicode().HasMaxLength(250).HasColumnName("user_email");
-            modelBuilder.Entity<User>().Property(ap => ap.User_Point).IsRequired(true).HasColumnName("user_point");
+            modelBuilder.Entity<User>().Property(ap => ap.User_Point).IsRequired(true).HasDefaultValue(0).HasColumnName("user_point");
             modelBuilder.Entity<User>().Property(ap => ap.User_Creation_Date).IsRequired(true).HasDefaultValue(DateTime.UtcNow).HasColumnName("user_creation_date");
             //RelationShips
             modelBuilder.Entity<User>()

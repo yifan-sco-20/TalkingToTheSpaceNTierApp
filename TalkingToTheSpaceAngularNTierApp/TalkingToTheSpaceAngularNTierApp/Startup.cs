@@ -41,6 +41,7 @@ namespace TalkingToTheSpaceAngularNTierApp
             #endregion
 
             #region CORS
+
             services.AddCors();
 
             string corsUrl = Configuration["CORS:site"];
@@ -86,5 +87,6 @@ namespace TalkingToTheSpaceAngularNTierApp
                 endpoints.MapControllers();
             });
         }
+
     }
 }

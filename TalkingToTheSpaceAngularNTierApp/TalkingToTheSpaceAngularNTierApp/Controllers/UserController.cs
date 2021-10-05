@@ -24,9 +24,9 @@ namespace WEB_API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> AddUser(string username, string user_password, string user_profile_name, string user_email, Int64 user_point)
+        public async Task<IActionResult> AddUser(User_Pass_Object user)
         {
-            var result = await _User_Service.AddUser(username, user_password, user_profile_name, user_email, user_point);
+            var result = await _User_Service.AddUser(user.username, user.user_password, user.user_profile_name, user.user_email, user.user_point);
             switch (result.success)
             {
                 case true:
@@ -69,9 +69,9 @@ namespace WEB_API.Controllers
 
         [HttpPost]
         [Route("[action]")]
-        public async Task<IActionResult> DeleteUser(User_Pass_Object user)
+        public async Task<IActionResult> DeleteUser(Int64 user_id)
         {
-            var result = await _User_Service.DeleteUser(user.user_id);
+            var result = await _User_Service.DeleteUser(user_id);
             switch (result.success)
             {
                 case true:

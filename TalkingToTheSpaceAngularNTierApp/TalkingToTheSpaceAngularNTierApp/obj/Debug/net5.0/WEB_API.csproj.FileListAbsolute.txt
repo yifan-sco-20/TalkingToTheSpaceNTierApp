@@ -130,3 +130,8 @@ E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTh
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\obj\Debug\net5.0\WEB_API.genruntimeconfig.cache
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\LOGIC.dll
 E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\LOGIC.pdb
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\System.Web.Cors.dll
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\System.Web.Http.dll
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\System.Web.Http.Cors.dll
+E:\Github\TalkingToTheSpaceNTierApp\TalkingToTheSpaceAngularNTierApp\TalkingToTheSpaceAngularNTierApp\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
