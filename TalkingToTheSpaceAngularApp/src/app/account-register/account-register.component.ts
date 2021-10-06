@@ -2,6 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { UserResult } from '../models/user-result.model';
 import { User } from'../models/user.model'
 import { UserService } from '../services/user.service';
+import {
+  DataResult,
+  orderBy,
+  process,
+  SortDescriptor
+} from "@progress/kendo-data-query";
+import { Observable, of } from "rxjs";
+import { GridDataResult, PageChangeEvent } from "@progress/kendo-angular-grid";
 
 @Component({
   selector: 'app-account-register',
@@ -16,6 +24,8 @@ export class AccountRegisterComponent implements OnInit {
   disabled: string = '';
   constructor(private UserService: UserService) {}
 
+  usersList: User[]
+
   async ngOnInit(): Promise<void> {
     //GET TH GRADES ON LOAD
     this.users.user_set = [];
@@ -24,6 +34,7 @@ export class AccountRegisterComponent implements OnInit {
       .then((data) => {
         if (data.success) {
           this.users = data;
+          this.usersList = data.user_set;
         } else {
           alert(data.userMessage);
         }
@@ -31,6 +42,7 @@ export class AccountRegisterComponent implements OnInit {
       .catch((error) => {
         alert(error);
       });
+
   }
 
   async AddUser() {
@@ -61,6 +73,9 @@ export class AccountRegisterComponent implements OnInit {
     this.load = 'no-show';
   }
 
+
+
+  
 }
 
 
