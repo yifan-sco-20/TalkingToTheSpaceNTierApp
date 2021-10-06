@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { User } from '../models/user.model';
 import { UserResult } from '../models/user-result.model';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -27,4 +26,7 @@ export class UserService {
       .get<UserResult>('http://localhost:53980/api/User/GetAllUsers')
       .toPromise();
   }
+
+  
+
 }
